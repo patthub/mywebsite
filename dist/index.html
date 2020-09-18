@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+
+    <script type="text/javascript">
+
+    var dzisiaj = new.Date();
+
+    var dzien = dzisiaj.getDate();
+    var miesiac = dzisiaj.getMonth()+1;
+    var rok = dzisiaj.getFullYear();
+
+    var godzina = dzisiaj.getHours();
+    var minuta = dzisiaj.getMinutes();
+    var sekunda = dzisiaj.getSeconds();
+
+
+    
+    
+    
+    </script>
 </head>
 <body>
-    <h1>
-        Hello boyyyyyyy
+    <div id="zegar"></div>
 
-    </h1>
+    <script type="text/javascript">
+
+    document.getElementById("zegar").innerHTML = dzien;
+    
+    </script>
+    
     
 </body>
 </html>
